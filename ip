@@ -1,0 +1,12 @@
+#!/bin/bash
+
+clear
+
+curl 'http://192.168.8.1/goform/goform_get_cmd_process?isTest=false&cmd=wifi_coverage%2Cm_ssid_enable%2Cimei%2Cweb_version%2Cwa_inner_version%2Chardware_version%2CMAX_Access_num%2CSSID1%2Cm_SSID%2Cm_HideSSID%2Cm_MAX_Access_num%2Clan_ipaddr%2Cmac_address%2Cmsisdn%2CLocalDomain%2Cwan_ipaddr%2Cipv6_wan_ipaddr%2Cipv6_pdp_type%2Cpdp_type%2Cppp_status%2Csim_imsi%2Crssi%2Crscp%2Clte_rsrp%2Cnetwork_type%2Cdns_mode%2Cprefer_dns_manual%2Cstandby_dns_manual%2Cdns_pri_addr_v4%2Cdns_sec_addr_v4%2Cipv6_dns_mode%2Cipv6_prefer_dns_manual%2Cipv6_standby_dns_manual%2Cdns_pri_addr_v6%2Cdns_sec_addr_v6%2Cmodel_name&multi_data=1&_=1621057703645' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'Sec-GPC: 1' \
+  -H 'Referer: http://192.168.8.1/index.html' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
