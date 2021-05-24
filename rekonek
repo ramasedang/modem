@@ -89,6 +89,19 @@ curl 'http://192.168.8.1/goform/goform_set_cmd_process' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   --data-raw 'isTest=false&goformId=APN_PROC_EX&apn_mode=manual&apn_action=set_default&set_default_flag=1&pdp_type=IP&index=4' \
 
+echo -n "ganti 3g"
+
+curl 'http://192.168.8.1/goform/goform_set_cmd_process' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'Sec-GPC: 1' \
+  -H 'Origin: http://192.168.8.1' \
+  -H 'Referer: http://192.168.8.1/index.html' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  --data-raw 'isTest=false&goformId=SET_BEARER_PREFERENCE&BearerPreference=Only_WCDMA' \
 
 sleep 1
 
@@ -118,6 +131,56 @@ curl 'http://192.168.8.1/goform/goform_get_cmd_process?isTest=false&cmd=wifi_cov
   -H 'Sec-GPC: 1' \
   -H 'Referer: http://192.168.8.1/index.html' \
   -H 'Accept-Language: en-US,en;q=0.9' \
+  
+sleep 1
+
+
+
+curl 'http://192.168.8.1/goform/goform_set_cmd_process' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'Sec-GPC: 1' \
+  -H 'Origin: http://192.168.8.1' \
+  -H 'Referer: http://192.168.8.1/index.html' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  --data-raw 'isTest=false&notCallback=true&goformId=DISCONNECT_NETWORK' \
+
+sleep 1
+
+echo -n "KONEK4G"
+
+curl 'http://192.168.8.1/goform/goform_set_cmd_process' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'Sec-GPC: 1' \
+  -H 'Origin: http://192.168.8.1' \
+  -H 'Referer: http://192.168.8.1/index.html' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  --data-raw 'isTest=false&goformId=SET_BEARER_PREFERENCE&BearerPreference=Only_LTE' \
+
+
+sleep 1
+
+
+curl 'http://192.168.8.1/goform/goform_set_cmd_process' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'Sec-GPC: 1' \
+  -H 'Origin: http://192.168.8.1' \
+  -H 'Referer: http://192.168.8.1/index.html' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  --data-raw 'isTest=false&notCallback=true&goformId=CONNECT_NETWORK' \
+
+sleep 1
 
 
 echo "ingin rekonek lagi?";read x
